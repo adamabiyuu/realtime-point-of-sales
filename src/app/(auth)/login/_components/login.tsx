@@ -4,19 +4,17 @@ import FormInput from "@/components/common/form-input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { INITIAL_LOGIN_FORM } from "@/constants/auth-constant";
-import { LoginForm, loginSchema } from "@/validations/auth-validation";
+import { LoginForm, loginSchemaForm } from "@/validations/auth-validation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 export default function Login() {
   const form = useForm<LoginForm>({
-    resolver: zodResolver(loginSchema),
+    resolver: zodResolver(loginSchemaForm),
     defaultValues: INITIAL_LOGIN_FORM,
   });
 
-  const onSubmit = form.handleSubmit(async (data) => {
-    console.log("Login data:", data);
-  });
+  const onSubmit = form.handleSubmit(async (data) => {});
 
   return (
     <Card>
