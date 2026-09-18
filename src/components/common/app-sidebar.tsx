@@ -12,7 +12,7 @@ export default function AppSidebar() {
   const { isMobile } = useSidebar();
   const pathname = usePathname();
   const profile = {
-    name: "Adam Abiyu",
+    name: "Avip Syaifulloh",
     role: "admin",
     avatar_url: "",
   };
