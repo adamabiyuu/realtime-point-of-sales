@@ -2,6 +2,7 @@ import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, Pagi
 
 export default function PaginationDataTable({ totalPages, currentPage, onChangePage }: { totalPages: number; currentPage: number; onChangePage: (page: number) => void }) {
   return (
+    // tes
     <Pagination>
       <PaginationContent>
         <PaginationItem>
